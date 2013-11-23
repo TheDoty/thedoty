@@ -1,0 +1,23 @@
+<div class="content-list">
+  <ul>
+    <li class="controls">
+      <div>
+	SHOW
+	<select ng-model="viewType">
+	  <option value="everything">EVERYTHING</option>
+	  <option value="food">FOOD</option>
+	  <option value="coffee">COFFEE</option>
+	  <option value="drinks">DRINKS</option>
+	</select>
+      </div>
+    </li>
+    <li ng-repeat="favorite in favorites | filter:filterFunction(viewType) | orderBy:'name'">
+      <a href="/favorites/{{ favorite.friendly }}">
+	<div>
+	  <h2>{{ favorite.name }}</h2>	
+	  <p>{{ favorite.description }}</p>
+	</div>
+      </a>
+    </li>
+  </ul>
+</div>

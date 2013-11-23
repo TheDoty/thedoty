@@ -1,0 +1,172 @@
+/*
+ *= require_self
+ *= require_tree .
+ */
+
+@import 'base';
+
+.page {
+   max-width: 960px;
+   margin: 0px auto;
+}
+
+.content {
+   margin: 5ex 0px;
+}
+
+.clearfix {
+   clear: both;	  
+}
+	  
+body {
+    background: $background;
+    color: $dark-foreground;
+    font-family: $bulk-font-family;
+    font-size: 10pt;
+    padding: 5ex 0px;
+}
+
+.title {
+   h1 {
+      font-family: $fancy-font-family;
+      font-weight: normal;
+      font-size: 28pt;
+      letter-spacing: 5pt;
+      text-transform: uppercase;   
+      margin-bottom: 0px;
+      text-align: center;
+   }
+
+   h3 {
+      text-align: center;
+   }     
+
+   a:link, a:visited {
+      color: $dark-foreground;
+      text-decoration: none;
+   }
+ 
+   a:hover, a:active {
+      color: $highlight;
+      text-decoration: none;
+   } 
+}
+
+/* For the navigation bars at the top and bottom of the site */
+.navigation {
+   ul {
+      padding-left: 0px;
+
+      li {
+         list-style-type: none;
+         display: inline;
+         font-family: $fancy-font-family;
+      	 font-weight: normal;
+      	 font-size: 12pt;
+      	 letter-spacing: 2pt;
+      	 text-transform: uppercase;   
+	 margin: 0ex 0px;
+	 padding-right: 2ex;
+
+      	 a:link, a:visited {
+	    padding: 1ex 0px;
+            color: $dark-foreground;
+            text-decoration: none;
+         }
+ 
+         a:hover, a:active {
+	    padding: 1ex 0px;
+            color: $highlight;
+            text-decoration: none;
+	    border-bottom: 1px solid $foreground;
+         }
+      }   
+
+      .active a:link, .active a:visited, .active a:hover, .active a:active {
+         color: $highlight;
+      }
+   }
+
+   hr {
+      margin: 3ex 0px;
+      height: 1px;
+      border: none;
+      color: $highlight;
+      background-color: $highlight;
+   }
+}
+
+h2 {
+   color: $foreground;
+   margin: 0px;
+   font-family: $fancy-font-family;
+   font-weight: normal;
+   font-size: 16pt;
+   letter-spacing: 3pt;
+}
+
+/* The list of main content separating entries/blog posts/sections */
+.content-list {
+   margin: 0px;
+   padding: 0px;
+	      
+   ul {
+      margin: 0px;
+      padding: 0px;
+   }
+
+   li {
+      list-style-type: none;
+      margin: 0px;
+      border-bottom: 1px solid $light-background;
+
+      div {
+         background-color: $background;
+	 padding: 3ex 0px;
+
+	 p {
+	    margin: 0px;
+	    padding-top: 1ex;
+	    color: $dark-foreground;
+         }
+      }
+
+      a:link, a:visited {
+         color: $foreground;
+         text-decoration: none;
+      }
+ 
+      a:hover, a:active {         
+         color: $highlight;
+         text-decoration: none;
+         border-bottom: 1px solid $foreground;
+
+         h2 {
+            color: $highlight;
+         }
+      }
+   }
+
+   li:last-child, li.controls {
+      border: none;
+   }
+}
+
+h3 {
+   font-family: $fancy-font-family;
+   font-weight: normal;
+   font-size: 10pt;
+   letter-spacing: 1.8pt;
+   margin: .3ex 0px;
+
+   ul {
+      padding: 0px;
+      margin: 0px;
+  
+      li {
+         list-style-type: none;
+         display: inline;
+	 margin: 0px 1.5ex;
+      }
+   }
+}

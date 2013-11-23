@@ -1,0 +1,135 @@
+koas:
+  friendly: koas
+  name: Kaos Pizza
+  description: Great Pizza with lots of outdoor seating.
+  has_food: true
+  has_coffee: false
+  has_drinks: false
+
+punchbowl:
+  friendly: punchbowl
+  name: Punch Bowl Social
+  description: Large converted factory space.  Excellent cocktails and dinner.
+  has_food: true
+  has_coffee: false
+  has_drinks: true
+
+vine:
+  friendly: vine
+  name: Vine Street Brewery
+  description: Denver sister to the Mountain Sun brewery in Boulder.  Great beer and good quality pub food.
+  has_food: true
+  has_coffee: false
+  has_drinks: true
+
+park:
+  friendly: vine
+  name: Park & Co
+  description: Good in everything, excellent in nothing.  Food and drinks.
+  has_food: true
+  has_coffee: false
+  has_drinks: true
+
+jelly:
+  friendly: jelly
+  name: Jelly Cafe
+  description: Brunch only.  The cocktails will rock you.  Watch out for the wait.
+  has_food: true
+  has_coffee: true
+  has_drinks: true
+
+city:
+  friendly: city
+  name: City o City
+  description: Veggies
+  has_food: true
+  has_coffee: false
+  has_drinks: false
+
+roostercat:
+  friendly: roostercat
+  name: Roostercat Coffee House
+  description: Coffee, wifi, and waffle sandwiches with a great atmosphere.
+  has_food: true
+  has_coffee: true
+  has_drinks: false
+
+bikecafe:
+  friendly: bike_cafe
+  name: Denver Bike Cafe
+  description: Get your bike fixed or hang out.
+  has_food: false
+  has_coffee: true
+  has_drinks: true
+
+recyclery:
+  friendly: recyclery
+  name: Recyclery
+  description: Another combo bike and coffee shop.
+  has_food: false
+  has_coffee: true
+  has_drinks: false
+
+pablos_6th:
+  friendly: pablos
+  name: Pablo's
+  description: A coffeeshop where people actually talk to each other.  No wifi.  Go club on sunday nights.
+  has_food: false
+  has_coffee: true
+  has_drinks: false
+
+pablos_13th:
+  friendly: pablos_13th
+  name: Pablo's (13th Ave)
+  description: The smaller, newer Pablo's.  Still no wifi, but everyone is too cool to talk.
+  has_food: false
+  has_coffee: true
+  has_drinks: false
+
+williams:
+  friendly: williams_and_graham
+  name: Williams and Graham
+  description: Denver's best speakeasy.  Hidden entrance behind a bookshelf.
+  has_food: false
+  has_coffee: false
+  has_drinks: true
+
+thin:
+  friendly: thin_man
+  name: The Thin Man
+  description: Crazy decor and infused vodkas.
+  has_food: false
+  has_coffee: false
+  has_drinks: true
+
+divide:
+  friendly: great_divide
+  name: Great Divide Brewery
+  description: The best beer in Denver.
+  has_food: false
+  has_coffee: false
+  has_drinks: true
+
+trve:
+  friendly: trve
+  name: Trve Brewing
+  description: The best brewery in Denver.  Heavy metal everything, and the beer is pretty good.
+  has_food: false
+  has_coffee: false
+  has_drinks: true
+
+monk:
+  friendly: cheeky_monk
+  name: Cheeky Monk
+  description: Denver's Belgium beer bar.  Not as good as others, but they have all of the right beer.
+  has_food: true
+  has_coffee: false
+  has_drinks: true
+
+gcb:
+  friendly: gcb
+  name: Golden City Brewery
+  description: Billed as "Golden's second largest brewery" after Coors, sit outside on picnic benches and drink cheap beer after whatever you were doing in the mountains.  Closes early.
+  has_food: false
+  has_coffee: false
+  has_drinks: true

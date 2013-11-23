@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%=h yield(:title) %></title>
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="page">
+    <div class="title">
+      <a href="/">
+	<div>
+	  <h1>THE DOTY</h1>
+	  <h3><ul><li>Geek</li><li>Cyclist</li><li>Photographer</li></h3>
+	</div>
+      </a>
+    </div>
+    <div class="navigation">
+      <hr />
+      <ul>
+	<%= nav_li(:blog, 'BLOG') %>
+	<%= nav_li(:photos, 'PHOTOGRAPHS') %>
+	<%= nav_li(:favorites, 'FAVORITES') %>
+	<%= nav_li(:about, 'ABOUT') %>
+      </ul>
+      <hr />
+    </div>
+
+    <div class="content">
+    <%= yield %>
+    </div>
+
+    <div class="navigation">
+      <hr />
+      <ul>
+	<li><a href="mailto:jdoty0@gmail.com">EMAIL</a></li>
+	<li><a href="linkedin.com">LINKEDIN</a></li>
+	<li><a href="twitter.com">TWITTER</a></li>
+	<li><a href="crazyguyonabike.com">CGOAB</a></li>
+	<li><a href="crazyguyonabike.com">SOURCE</a></li>
+      </ul>
+      <hr />
+    </div>
+  </div>
+</body>
+</html>

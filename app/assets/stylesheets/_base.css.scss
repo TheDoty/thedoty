@@ -1,0 +1,15 @@
+$background: #121212;
+$light-background: #2f2f2f;
+$dark-foreground: #b8b8b8;
+$foreground: #f0f0f0;
+$highlight: #c90016;
+$fancy-font-family: 'American Typewriter', Georgia, Serif, serif;
+$bulk-font-family: Georgia, Serif, serif;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
