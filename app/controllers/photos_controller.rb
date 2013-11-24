@@ -1,7 +1,7 @@
 class PhotosController < ApplicationController
   def index
     @photos = Photo.paginate(:page => params[:page]).order(:created_at).reverse_order
-    photos = @photos
+    photos = @photos.dup
     @photo_rows = []
     
     while photos.length > 0 do
