@@ -1,11 +1,12 @@
-koas:
-  friendly: koas
+kaos:
+  friendly: kaos
   name: Kaos Pizzeria
   description: Great Pizza with lots of outdoor seating.
   has_food: true
   has_coffee: false
   has_drinks: false
   address: 1439 S Pearl St
+  website: www.kaospizza.com
   latitude: 39.690502
   longitude: -104.980557
 
@@ -17,6 +18,7 @@ punchbowl:
   has_coffee: false
   has_drinks: true
   address: 65 Broadway
+  website: punchbowlsocial.com
   latitude: 39.71793
   longitude: -104.987981
 
@@ -28,6 +30,7 @@ phoon6:
   has_coffee: false
   has_drinks: false
   address: 1312 E. 6th Ave
+  website: phoon6.com
   latitude: 39.725479
   longitude: -104.971236
 
@@ -39,6 +42,7 @@ vine:
   has_coffee: false
   has_drinks: true
   address: 1700 Vine St
+  website: www.mountainsunpub.com
   latitude: 39.7434
   longitude: -104.961998
 
@@ -50,6 +54,7 @@ park:
   has_coffee: false
   has_drinks: true
   address: 439 E 17th Ave
+  website: parkandcodenver.com
   latitude: 39.743374
   longitude: -104.981297
 
@@ -61,6 +66,7 @@ jelly:
   has_coffee: true
   has_drinks: true
   address: 600 E 13th Ave
+  website: www.eatmorejelly.com
   latitude: 39.736801
   longitude: -104.979722
 
@@ -72,6 +78,7 @@ city:
   has_coffee: false
   has_drinks: false
   address: 206 E 13th Ave
+  website: www.cityocitydenver.com
   latitude: 39.736734
   longitude: -104.984648
 
@@ -83,6 +90,7 @@ roostercat:
   has_coffee: true
   has_drinks: false
   address: 1045 Lincoln Street
+  website: roostercatcoffeehouse.com
   latitude: 39.732956
   longitude: -104.986361
 
@@ -94,6 +102,7 @@ bikecafe:
   has_coffee: true
   has_drinks: true
   address: 1308 E 17th Ave
+  website: denverbicyclecafe.com
   latitude: 39.743107
   longitude: -104.970548
 
@@ -105,6 +114,7 @@ recyclery:
   has_coffee: true
   has_drinks: false
   address: 1405 Ogden St
+  website: recyclerybikecafe.com
   latitude: 39.738596
   longitude: -104.975421
 
@@ -116,6 +126,7 @@ pablos_6th:
   has_coffee: true
   has_drinks: false
   address: 630 E 6th Ave
+  website: www.pabloscoffee.com
   latitude: 39.725456
   longitude: -104.978977
 
@@ -127,6 +138,7 @@ pablos_13th:
   has_coffee: true
   has_drinks: false
   address: 1300 Pennsylvania St
+  website: www.pabloscoffee.com
   latitude: 39.737084
   longitude: -104.980862
 
@@ -138,6 +150,7 @@ williams:
   has_coffee: false
   has_drinks: true
   address: 3160 Tejon St
+  website: williamsandgraham.com
   latitude: 39.761938
   longitude: -105.010927
 
@@ -149,6 +162,7 @@ thin:
   has_coffee: false
   has_drinks: true
   address: 2015 E 17th Ave
+  website: thinmantavern.com
   latitude: 39.743414
   longitude: -104.962999
 
@@ -160,6 +174,7 @@ divide:
   has_coffee: false
   has_drinks: true
   address: 2201 Arapahoe St
+  website: greatdivide.com
   latitude: 39.753656
   longitude: -104.988457
 
@@ -171,6 +186,7 @@ trve:
   has_coffee: false
   has_drinks: true
   address: 227 Broadway
+  website: trvebrewing.com
   latitude: 39.719958
   longitude: -104.987665
 
@@ -182,6 +198,7 @@ monk:
   has_coffee: false
   has_drinks: true
   address: 534 E Colfax
+  website: www.thecheekymonk.com
   latitude: 39.739468
   longitude: -104.98013
 
@@ -193,5 +210,6 @@ gcb:
   has_coffee: false
   has_drinks: true
   address: 920 12th St, Golden
+  website: www.gcbrewery.com
   latitude: 39.754641
   longitude: -105.223718

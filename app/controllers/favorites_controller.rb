@@ -2,7 +2,7 @@ class FavoritesController < ApplicationController
   def index
     respond_to do |format|
       format.html { render 'index.html' }
-      format.json { render :json => Favorite.find(:all) }
+      format.json { render :json => Favorite.all }
     end
   end
 

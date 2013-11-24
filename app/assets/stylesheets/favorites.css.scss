@@ -1,23 +1,32 @@
 @import 'base';
 
 .controls {
-   float: right;
-   font-family: $fancy-font-family;
-   border: none;
+  float: right;
+  font-family: $fancy-font-family;
+  border: none;
 }
 
-h3.left {
-   ul {
-      li {
-         margin: 0px 3ex 0px 0px;
-      }
-   }
+h3 {   
+  a:link, a:visited {
+	  color: $dark-foreground;
+	  text-decoration: none;
+  }
+  
+  a:hover, a:active {         
+	  color: $highlight;
+	  text-decoration: none;
+	  border-bottom: 1px solid $foreground;
+  }
+}
+
+h3.left ul li {
+  margin: 0px 3ex 0px 0px;
 }
 
 .details {
   padding: 3ex 0px;
 }
-	 
+
 .map {
   float: right;	
   display: block;

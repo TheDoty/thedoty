@@ -7,14 +7,14 @@ favoritesApp.config(['$httpProvider', '$routeProvider', '$locationProvider', fun
   $httpProvider.defaults.headers.common["X-CSRF-TOKEN"] = authToken;
 
   $routeProvider.
-    when('/favorites/:friendly', {
-      templateUrl: '/partials/favorites/detail.html',
-      controller: 'FavoriteController'
-    }).
-    otherwise({
-      templateUrl: '/partials/favorites/list.html',
-      controller: 'FavoritesController'
-    });
+	  when('/favorites/:friendly', {
+	    templateUrl: '/partials/favorites/detail.html',
+	    controller: 'FavoriteController'
+	  }).
+	  otherwise({
+	    templateUrl: '/partials/favorites/list.html',
+	    controller: 'FavoritesController'
+	  });
 
   $locationProvider.html5Mode(true);
 }]);

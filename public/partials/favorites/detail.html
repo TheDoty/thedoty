@@ -1,6 +1,8 @@
   <google-map class="map" center="center" draggable="true" zoom="zoom" markers="markers" mark-click="true"></google-map>
 <div class="details">
   <h2>{{ favorite.name }}</h2>
+  <h3>{{ favorite.address }}</h3>
+  <h3 ng-bind-html="websiteLink(favorite)"></h3>
   <h3 class="left">
     <ul>
       <li ng-show="favorite.has_food">Food</li>
@@ -8,7 +10,6 @@
       <li ng-show="favorite.has_drinks">Drinks</li>
     </ul>
   </h3>
-  <h3>{{ favorite.address }}</h3>
   <p>{{ favorite.description }}</p>
 </div>
 

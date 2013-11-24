@@ -25,7 +25,7 @@
 /* Tell angular to reload when back buttons are pressed, etc */
 $(document).on('page:load', function() {
   $('[ng-app]').each(function() {
-    module = $(this).attr('ng-app');
-    angular.bootstrap(this, [module]);
+	  module = $(this).attr('ng-app');
+	  angular.bootstrap(this, [module]);
   });
 });

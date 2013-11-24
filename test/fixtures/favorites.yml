@@ -1,11 +1,71 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+kaos:
+  friendly: kaos
+  name: Kaos Pizzeria
+  description: Great Pizza with lots of outdoor seating.
+  has_food: true
+  has_coffee: false
+  has_drinks: false
+  address: 1439 S Pearl St
+  website: www.kaospizza.com
+  latitude: 39.690502
+  longitude: -104.980557
 
-# This model initially had no columns defined.  If you add columns to the
-# model remove the '{}' from the fixture names and add the columns immediately
-# below each fixture, per the syntax in the comments below
-#
-one: {}
-# column: value
-#
-two: {}
-#  column: value
+punchbowl:
+  friendly: punchbowl
+  name: Punch Bowl Social
+  description: Large converted factory space.  Excellent cocktails and dinner.
+  has_food: true
+  has_coffee: false
+  has_drinks: true
+  address: 65 Broadway
+  website: punchbowlsocial.com
+  latitude: 39.71793
+  longitude: -104.987981
+
+phoon6:
+  friendly: phoon6
+  name: Pho on 6
+  description: Best pho in Denver
+  has_food: true
+  has_coffee: false
+  has_drinks: false
+  address: 1312 E. 6th Ave
+  website: phoon6.com
+  latitude: 39.725479
+  longitude: -104.971236
+
+vine:
+  friendly: vine
+  name: Vine Street Pub
+  description: Denver sister to the Mountain Sun brewery in Boulder.  Great beer and good pub food.
+  has_food: true
+  has_coffee: false
+  has_drinks: true
+  address: 1700 Vine St
+  website: www.mountainsunpub.com
+  latitude: 39.7434
+  longitude: -104.961998
+
+park:
+  friendly: vine
+  name: Park & Co
+  description: Good in everything, excellent in nothing.  Food and Beer.
+  has_food: true
+  has_coffee: false
+  has_drinks: true
+  address: 439 E 17th Ave
+  website: parkandcodenver.com
+  latitude: 39.743374
+  longitude: -104.981297
+
+jelly:
+  friendly: jelly
+  name: Jelly Cafe
+  description: Brunch only.  The cocktails will rock you.  Watch out for the wait.
+  has_food: true
+  has_coffee: true
+  has_drinks: true
+  address: 600 E 13th Ave
+  website: www.eatmorejelly.com
+  latitude: 39.736801
+  longitude: -104.979722

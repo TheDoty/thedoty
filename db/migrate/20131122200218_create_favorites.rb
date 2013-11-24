@@ -8,6 +8,7 @@ class CreateFavorites < ActiveRecord::Migration
       t.boolean :has_food
       t.boolean :has_coffee
       t.boolean :has_drinks
+      t.string :website
       t.float :latitude
       t.float :longitude
 

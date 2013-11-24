@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20131122213235) do
     t.boolean  "has_food"
     t.boolean  "has_coffee"
     t.boolean  "has_drinks"
+    t.string   "website"
     t.float    "latitude"
     t.float    "longitude"
     t.datetime "created_at"
