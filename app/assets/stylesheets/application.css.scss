@@ -170,3 +170,29 @@ h3 {
 	  }
   }
 }
+
+.pagination {
+  font-family: $fancy-font-family;
+  font-weight: normal;
+  font-size: 16pt;
+  letter-spacing: 3pt;
+
+  .disabled {
+    display: none;
+  }
+  
+	a:link, a:visited {
+    color: $dark-foreground;
+    text-decoration: none;
+	}
+	  
+	a:hover, a:active {         
+    color: $highlight;
+    text-decoration: none;
+    border-bottom: 1px solid $foreground;
+  }
+  
+  .next_page {
+    float: right;
+  }
+}

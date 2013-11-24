@@ -1,0 +1,13 @@
+<% content_for :title, "Photographs" %>
+
+<%= link_to @photo.photo.url do %>
+  <% if @photo.alt %>
+    <img alt="<%= @photo.alt %>" src="<%= @photo.photo.detail.url %>" />
+  <% else %>
+    <img src="<%= @photo.photo.detail.url %>" />
+  <% end %>
+<% end %>
+
+<% if @photo.description %>
+  <p><%= @photo.description %></p>
+<% end %>  

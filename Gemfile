@@ -44,3 +44,6 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 gem 'angularjs-rails'
+gem "mini_magick"
+gem 'carrierwave'
+gem 'will_paginate'

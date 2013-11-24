@@ -1,3 +1,64 @@
 // Place all the styles related to the photos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'base';
+
+$image-spacing: 19px;
+
+.photo-row {  
+  ul {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: $image-spacing;
+
+    li {
+      list-style-type: none;
+      display: inline;
+      margin: 0px $image-spacing 0px 0px;
+      padding: 0px;
+
+      img {
+        max-width: 305px;
+        max-height: 305px;
+        margin: 0px;
+      }
+
+	    a:link, a:visited, a:hover, a:active {
+        text-decoration: none;
+	    }
+    }
+
+    li:last-child {
+      margin: 0px;
+    }
+  }
+}
+
+.photo-detail {
+  border-collapse: collapse;
+  border-spacing: 0px;
+  cell-padding: 0px;
+
+  tr {
+    height: 100%;
+    padding: 0px;
+  }
+
+  td {
+    padding: 0px;
+    height: 100%;
+    background-color: blue;
+  }
+
+  a {
+    height: 100%;
+  }
+
+  .button {
+    width: 25px;
+    height: 100%;
+    background-color: red;
+  }
+}
+

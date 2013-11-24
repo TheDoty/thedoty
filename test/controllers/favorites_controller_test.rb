@@ -1,5 +1,5 @@
 require 'test_helper'
-
+ 
 class FavoritesControllerTest < ActionController::TestCase
   test "index defaults to html" do
     get :index
