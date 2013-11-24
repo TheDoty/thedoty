@@ -14,6 +14,14 @@ h3.left {
    }
 }
 
+.details {
+  padding: 3ex 0px;
+}
+	 
 .map {
-  float: right;
+  float: right;	
+  display: block;
+  height: 300px;
+  width: 300px;
+  margin: 4ex 0px 4ex 4ex;
 }

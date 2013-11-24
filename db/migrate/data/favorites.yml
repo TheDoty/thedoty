@@ -1,10 +1,13 @@
 koas:
   friendly: koas
-  name: Kaos Pizza
+  name: Kaos Pizzeria
   description: Great Pizza with lots of outdoor seating.
   has_food: true
   has_coffee: false
   has_drinks: false
+  address: 1439 S Pearl St
+  latitude: 39.690502
+  longitude: -104.980557
 
 punchbowl:
   friendly: punchbowl
@@ -13,22 +16,42 @@ punchbowl:
   has_food: true
   has_coffee: false
   has_drinks: true
+  address: 65 Broadway
+  latitude: 39.71793
+  longitude: -104.987981
+
+phoon6:
+  friendly: phoon6
+  name: Pho on 6
+  description: Best pho in Denver
+  has_food: true
+  has_coffee: false
+  has_drinks: false
+  address: 1312 E. 6th Ave
+  latitude: 39.725479
+  longitude: -104.971236
 
 vine:
   friendly: vine
-  name: Vine Street Brewery
-  description: Denver sister to the Mountain Sun brewery in Boulder.  Great beer and good quality pub food.
+  name: Vine Street Pub
+  description: Denver sister to the Mountain Sun brewery in Boulder.  Great beer and good pub food.
   has_food: true
   has_coffee: false
   has_drinks: true
+  address: 1700 Vine St
+  latitude: 39.7434
+  longitude: -104.961998
 
 park:
   friendly: vine
   name: Park & Co
-  description: Good in everything, excellent in nothing.  Food and drinks.
+  description: Good in everything, excellent in nothing.  Food and Beer.
   has_food: true
   has_coffee: false
   has_drinks: true
+  address: 439 E 17th Ave
+  latitude: 39.743374
+  longitude: -104.981297
 
 jelly:
   friendly: jelly
@@ -37,38 +60,53 @@ jelly:
   has_food: true
   has_coffee: true
   has_drinks: true
+  address: 600 E 13th Ave
+  latitude: 39.736801
+  longitude: -104.979722
 
 city:
   friendly: city
-  name: City o City
-  description: Veggies
+  name: City O' City
+  description: Veggie friendly for brunch and dinner.  I've never actually gotten past the line!
   has_food: true
   has_coffee: false
   has_drinks: false
+  address: 206 E 13th Ave
+  latitude: 39.736734
+  longitude: -104.984648
 
 roostercat:
   friendly: roostercat
   name: Roostercat Coffee House
-  description: Coffee, wifi, and waffle sandwiches with a great atmosphere.
+  description: Coffee, wifi, and waffle sandwiches with a great atmosphere.  Open 'til midnight, woot!
   has_food: true
   has_coffee: true
   has_drinks: false
+  address: 1045 Lincoln Street
+  latitude: 39.732956
+  longitude: -104.986361
 
 bikecafe:
   friendly: bike_cafe
-  name: Denver Bike Cafe
-  description: Get your bike fixed or hang out.
+  name: Denver Bicycle Cafe
+  description: Get your bike fixed or hang out.  Bar, coffee, and bike shop all rolled into one.
   has_food: false
   has_coffee: true
   has_drinks: true
+  address: 1308 E 17th Ave
+  latitude: 39.743107
+  longitude: -104.970548
 
 recyclery:
   friendly: recyclery
-  name: Recyclery
-  description: Another combo bike and coffee shop.
+  name: reCyclery
+  description: Combo bike and coffee shop.  Specializes in used bikes.
   has_food: false
   has_coffee: true
   has_drinks: false
+  address: 1405 Ogden St
+  latitude: 39.738596
+  longitude: -104.975421
 
 pablos_6th:
   friendly: pablos
@@ -77,46 +115,64 @@ pablos_6th:
   has_food: false
   has_coffee: true
   has_drinks: false
+  address: 630 E 6th Ave
+  latitude: 39.725456
+  longitude: -104.978977
 
 pablos_13th:
   friendly: pablos_13th
   name: Pablo's (13th Ave)
-  description: The smaller, newer Pablo's.  Still no wifi, but everyone is too cool to talk.
+  description: The smaller, newer Pablo's.  Still no wifi, and everyone is too cool to talk.
   has_food: false
   has_coffee: true
   has_drinks: false
+  address: 1300 Pennsylvania St
+  latitude: 39.737084
+  longitude: -104.980862
 
 williams:
   friendly: williams_and_graham
   name: Williams and Graham
-  description: Denver's best speakeasy.  Hidden entrance behind a bookshelf.
+  description: Denver's best cocktail bar.  Speakeasy styled with a hidden entrance behind a bookshelf.
   has_food: false
   has_coffee: false
   has_drinks: true
+  address: 3160 Tejon St
+  latitude: 39.761938
+  longitude: -105.010927
 
 thin:
   friendly: thin_man
   name: The Thin Man
-  description: Crazy decor and infused vodkas.
+  description: Crazy decor and infused vodkas.  Great divey bar.
   has_food: false
   has_coffee: false
   has_drinks: true
+  address: 2015 E 17th Ave
+  latitude: 39.743414
+  longitude: -104.962999
 
 divide:
   friendly: great_divide
   name: Great Divide Brewery
-  description: The best beer in Denver.
+  description: The best beer in Denver, but the brewery can be crowded.
   has_food: false
   has_coffee: false
   has_drinks: true
+  address: 2201 Arapahoe St
+  latitude: 39.753656
+  longitude: -104.988457
 
 trve:
   friendly: trve
   name: Trve Brewing
-  description: The best brewery in Denver.  Heavy metal everything, and the beer is pretty good.
+  description: The best brewery in Denver.  Heavy metal everything, and the beer is good.
   has_food: false
   has_coffee: false
   has_drinks: true
+  address: 227 Broadway
+  latitude: 39.719958
+  longitude: -104.987665
 
 monk:
   friendly: cheeky_monk
@@ -125,11 +181,17 @@ monk:
   has_food: true
   has_coffee: false
   has_drinks: true
+  address: 534 E Colfax
+  latitude: 39.739468
+  longitude: -104.98013
 
 gcb:
   friendly: gcb
   name: Golden City Brewery
-  description: Billed as "Golden's second largest brewery" after Coors, sit outside on picnic benches and drink cheap beer after whatever you were doing in the mountains.  Closes early.
+  description: Billed as "Golden's second largest brewery" after Coors, sit outside on picnic benches and drink cheap beer after whatever you were doing in the mountains.  Closes at six, so head there in the afternoon.
   has_food: false
   has_coffee: false
   has_drinks: true
+  address: 920 12th St, Golden
+  latitude: 39.754641
+  longitude: -105.223718

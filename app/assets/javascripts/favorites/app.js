@@ -1,6 +1,6 @@
 'use strict'
 
-var favoritesApp = angular.module('favoritesApp', ['ngRoute', 'favoritesControllers', 'favoritesServices']);
+var favoritesApp = angular.module('favoritesApp', ['ngRoute', 'ngSanitize', 'google-maps', 'favoritesControllers', 'favoritesServices']);
 
 favoritesApp.config(['$httpProvider', '$routeProvider', '$locationProvider', function($httpProvider, $routeProvider, $locationProvider) {
   var authToken = $("meta[name=\"csrf-token\"]").attr("content");
