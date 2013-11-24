@@ -50,7 +50,11 @@ favoritesControllers.controller('FavoriteController', [ '$scope', '$sce', '$rout
   });
 
   $scope.websiteLink = function(favorite) {
-	  var html = '<a href=\"http://' + favorite.website + '\">' + favorite.website + '</a>';
-	  return $sce.trustAsHtml(html);
+    if(favorite && favorite.website) {
+	    var html = '<a href=\"http://' + favorite.website + '\">' + favorite.website + '</a>';
+	    return $sce.trustAsHtml(html);
+    } else {
+      return '';
+    }
   };
 }]);

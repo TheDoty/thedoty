@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131122213235) do
+ActiveRecord::Schema.define(version: 20131124040447) do
 
   create_table "favorites", force: true do |t|
     t.string   "friendly"
@@ -24,6 +24,14 @@ ActiveRecord::Schema.define(version: 20131122213235) do
     t.string   "website"
     t.float    "latitude"
     t.float    "longitude"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "photos", force: true do |t|
+    t.string   "photo"
+    t.string   "alt"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
