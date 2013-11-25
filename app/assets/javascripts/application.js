@@ -16,11 +16,10 @@
 //= require google-maps
 //= require angular
 //= require angular-route
-//= require angular-animate
 //= require angular-resource
 //= require angular-sanitize
 //= require angular-google-maps
-//= require_tree .
+//= require_directory .
 
 /* Tell angular to reload when back buttons are pressed, etc */
 $(document).on('page:load', function() {

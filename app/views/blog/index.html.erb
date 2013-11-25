@@ -2,11 +2,16 @@
 
 <div class="content-list">
   <ul>
-    <li>
+    <% for post in @posts %>
+    <li>      
       <div>
-	<h3>Nothing Here</h3>
-	<p>This is still a work in progress.  Head on over to <a href="thedoty.com">thedoty.com</a> if you want.</p>
+        <a href="/<%= post.friendly %>">
+   	      <h2><%= post.title %></h2> 
+        </a>
+	      <h3><%= post.created_at.strftime("%B %d, %Y") %></h3> 
+        <%= post.body.html_safe %>
       </div>
     </li>
+    <% end %>
   </ul>
 </div>

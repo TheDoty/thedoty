@@ -3,6 +3,7 @@ Thedoty::Application.routes.draw do
   resources :photos
   resources :favorites, defaults: { format: :html }
   get '/about' => "about#index"
+  get '/:id' => "blog#show"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
