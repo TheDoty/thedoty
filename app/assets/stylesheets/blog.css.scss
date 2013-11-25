@@ -3,6 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 @import 'base';
+$top-image-spacing: $image-spacing/2 + 2;
+$bottom-image-spacing: $image-spacing/2 - 5;
 
 .content-list {
   li {
@@ -14,5 +16,14 @@
 }
 
 .content-list ul li div.post p {
-  margin: $image_spacing 0px 0px 0px;
+  width: 100%;
+}
+
+.content-list li div div.photo {
+  padding: $top-image-spacing/2 0px $bottom-image-spacing 0px;
+}
+
+.content-list ul li div.post div.photo {
+  margin: 0px auto;
+  text-align: center;
 }
