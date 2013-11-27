@@ -3,6 +3,9 @@ Thedoty::Application.routes.draw do
   resources :photos
   resources :favorites, defaults: { format: :html }
   get '/about' => "about#index"
+  get '/rss.xml' => "blog#feed", defaults: { format: :xml }
+  get '/feed.xml' => "blog#feed", defaults: { format: :xml }
+  get '/feed.rss' => "blog#feed", defaults: { format: :xml }
   get '/:id' => "blog#show"
 
   # The priority is based upon order of creation: first created -> highest priority.

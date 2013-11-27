@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>The Doty | Blog</title>
+    <description>Photos, cycling, and geekery.</description>
+    <link>http://<%= site_url %>/</link>
+    <lastBuildDate><%= @posts.first.updated_at.to_s(:rfc822) %></lastBuildDate>
+    <pubDate><%= @posts.first.updated_at.to_s(:rfc822) %></pubDate>
+    <ttl>60</ttl>
+
+    <% for post in @posts %>
+      <item>
+        <title><%= post.title %></title>
+        <description><%= post.body %></description>
+        <pubDate><%= post.created_at.to_s(:rfc822) %></pubDate>
+        <link><%= "http://#{site_url}/#{post.friendly}" %></link>
+        <guid><%= post.friendly %></guid>
+      </item>
+    <% end %>
+  </channel>
+</rss>
