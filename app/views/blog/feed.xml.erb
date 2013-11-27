@@ -14,7 +14,7 @@
         <description><%= post.body %></description>
         <pubDate><%= post.created_at.to_s(:rfc822) %></pubDate>
         <link><%= "http://#{site_url}/#{post.friendly}" %></link>
-        <guid><%= post.friendly %></guid>
+        <guid><%= "http://#{site_url}/#{post.friendly}" %></guid>
       </item>
     <% end %>
   </channel>
