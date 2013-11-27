@@ -1,6 +1,6 @@
 class BlogController < ApplicationController
   def index
-    @posts = Post.paginate(:page => params[:page]).order(:created_at).reverse_order
+    @posts = Post.where("in_timeline = ?", true).paginate(:page => params[:page]).order(:created_at).reverse_order
   end
 
   def show
@@ -8,7 +8,7 @@ class BlogController < ApplicationController
   end
 
   def feed
-    @posts = Post.all.order(:created_at).reverse_order
+    @posts = Post.where("in_timeline = ?", true).order(:created_at).reverse_order
 
     respond_to do |format|
       format.xml { render :layout => false }
