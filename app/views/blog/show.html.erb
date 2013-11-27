@@ -5,7 +5,9 @@
     <li>      
       <div>
    	    <h2><%= @post.title %></h2> 
-	      <h3><%= @post.created_at.strftime("%B %d, %Y") %></h3> 
+        <% if @post.created_at %>
+	        <h3><%= @post.created_at.strftime("%B %d, %Y") %></h3> 
+        <% end %>
         <%= @post.body.html_safe %>
       </div>
     </li>
