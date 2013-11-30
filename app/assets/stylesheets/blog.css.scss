@@ -27,3 +27,8 @@ $bottom-image-spacing: $image-spacing/2 - 7;
   margin: 0px auto;
   text-align: center;
 }
+
+.content-list img {
+  max-width: 960px;
+  max-height: 960px;
+}

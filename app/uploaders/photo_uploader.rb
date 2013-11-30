@@ -11,16 +11,15 @@ class PhotoUploader < CarrierWave::Uploader::Base
     'img.jpg'
   end
 
-  # Process files as they are uploaded:
-  process :resize_to_fit => [2496, 1664]
-
   # Create different versions of your uploaded files:
   version :thumb do
-    process :resize_to_fill => [305, 305]
+    process :resize_to_fill => [610, 610]
+    process :quality => 95
   end
 
   version :detail do
-    process :resize_to_fit => [960, 960]
+    process :resize_to_fit => [1920, 1920]
+    process :quality => 95
   end
 
   # Extension whitelist

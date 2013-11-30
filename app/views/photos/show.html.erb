@@ -2,9 +2,9 @@
 
 <%= link_to @photo.photo.url do %>
   <% if @photo.alt %>
-    <img alt="<%= @photo.alt %>" src="<%= @photo.photo.detail.url %>" />
+    <img class="detail" alt="<%= @photo.alt %>" src="<%= @photo.photo.detail.url %>" />
   <% else %>
-    <img src="<%= @photo.photo.detail.url %>" />
+    <img class="detail" src="<%= @photo.photo.detail.url %>" />
   <% end %>
 <% end %>
 
