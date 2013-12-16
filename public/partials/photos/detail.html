@@ -1,0 +1,14 @@
+<div id="photo-detail">
+  <a class="link-newer" href="/photos/{{ photo.newer_id }}" ng-if="photo.newer_id">
+    <div class="button-newer"></div>
+  </a>
+
+  <a class="link-older" href="/photos/{{ photo.older_id }}" ng-if="photo.older_id">
+    <div class="button-older"></div>
+  </a>
+
+  <img class="detail" alt="{{ photo.alt }}" ng-src="{{ photo.detail_url }}" ng-if="photo.alt" />
+  <img class="detail" ng-src="{{ photo.detail_url }}" ng-if="!(photo.alt)" />
+
+  <p ng-if="photo.description">{{ photo.description }}</p>
+</div>

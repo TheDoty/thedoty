@@ -1,6 +1,7 @@
 Thedoty::Application.routes.draw do
   get '/' => "blog#index"
-  resources :photos
+  resources :photos, defaults: { format: :html }
+  get '/photos/page/:page.json' => "photos#page", defaults: { format: :json }
   resources :favorites, defaults: { format: :html }
   get '/about' => "about#index"
   get '/rss.xml' => "blog#feed", defaults: { format: :xml }

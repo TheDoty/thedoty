@@ -1,4 +1,8 @@
 <% content_for :title, "Denver Favorites" %>
+<% content_for :head do %>
+  <%= javascript_include_tag "favorites/favorites.js" %>
+  <base href="/favorites" />
+<% end %>
 
 <div ng-app="favoritesApp">
   <div ng-view></div>

@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 var favoritesServices = angular.module('favoritesServices', ['ngResource']);
 

@@ -13,12 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require google-maps
 //= require angular
 //= require angular-route
 //= require angular-resource
 //= require angular-sanitize
-//= require angular-google-maps
 //= require_directory .
 
 /* Tell angular to reload when back buttons are pressed, etc */

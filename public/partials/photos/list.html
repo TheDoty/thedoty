@@ -1,0 +1,16 @@
+<div class="photo-row" ng-repeat="row in photoPage.rows">
+  <ul>
+    <li ng-repeat="photo in row">
+      <a href="/photos/{{ photo.id }}">
+        <img ng-src="{{ photo.url }}" />
+      </a>
+    </li> 
+  </ul>
+</div>
+
+<div class="pagination">
+  <a class="link-newer" class="previous_page" rel="prev start" href="/photos?page={{ newerPage }}" ng-if="newerPage">&lt; NEWER</a>
+  <a class="link-older" class="next_page" rel="next" href="/photos?page={{ olderPage }}" ng-if="olderPage">OLDER &gt;</a>
+</div>
+
+<div class="clearfix"></div>

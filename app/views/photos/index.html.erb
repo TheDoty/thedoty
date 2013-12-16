@@ -1,19 +1,9 @@
 <% content_for :title, "Photographs" %>
-
-<% for row in @photo_rows %>
-  <div class="photo-row">
-    <ul>
-    <% for photo in row %>
-      <li>
-        <%= link_to action: :show, id: photo.id do %>
-          <img src="<%= photo.photo.thumb.url %>" />
-        <% end %>
-      </li> 
-    <% end %>
-    </ul>
-  </div>
+<% content_for :head do %>
+  <%= javascript_include_tag "photos/photos.js" %>
+  <base href="/photos">
 <% end %>
 
-<%= will_paginate @photos, :previous_label => '< NEWER', :next_label => 'OLDER >', :page_links => false %>
-
-<div class="clearfix"></div>
+<div ng-app="photosApp">
+  <div ng-view></div>
+</div>

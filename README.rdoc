@@ -2,6 +2,6 @@ Pretty simple website.
 
 The blog is straightforward MVC rails.  Authoring is via the rails console for now; Post.author creates a new post allowing you embed photos via the text photo:id.
 
-The photos section is likewise simple at the moment.  Add via the bin/add_photo.sh script.
+The photos section is now built on AngularJS.  Add via the bin/add_photo.sh script.
 
-The favorites section is pretty neat: all AngularJS with the rails backend just server up JSON and loading the angular files.  Check out app/assets/javascript/favorites/*.js and public/partials for most of the non-obvious files.
+The favorites section is AngularJS with the rails backend just server up JSON and loading the angular files.  Check out app/assets/javascript/favorites/*.js and public/partials for most of the non-obvious files.
