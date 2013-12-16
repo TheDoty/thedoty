@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>The Doty | <%=h yield(:title) %></title>
+  <title><%= t('title') %> | <%=h yield(:title) %></title>
   <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= yield :head %>
@@ -12,7 +12,7 @@
     <div class="title">
       <a href="/">
 	<div>
-	  <h1>THE DOTY</h1>
+	  <h1><%= t('title') %></h1>
 	</div>
       </a>
     </div>
@@ -34,12 +34,12 @@
     <div class="navigation">
       <hr />
       <ul>
-	      <li><a href="mailto:jdoty0@gmail.com">EMAIL</a></li>
-	      <li><a href="http://www.linkedin.com/pub/jason-doty/5/985/642">LINKEDIN</a></li>
-	      <li><a href="http://twitter.com/thedoty">TWITTER</a></li>
-              <li><a href="http://500px.com/TheDoty">500px</a></li>
-	      <li><a href="http://www.crazyguyonabike.com/directory/?user=TheDoty">CGOAB</a></li>
-	      <li><a href="https://github.com/TheDoty/thedoty">SOURCE</a></li>
+	      <li><a href="<%= t('email_href') %>">EMAIL</a></li>
+	      <li><a href="<%= t('linkedin_href') %>">LINKEDIN</a></li>
+	      <li><a href="<%= t('twitter_href') %>">TWITTER</a></li>
+        <li><a href="<%= t('500px_href') %>">500px</a></li>
+	      <li><a href="<%= t('cgoab_href') %>">CGOAB</a></li>
+	      <li><a href="<%= t('github_href') %>">SOURCE</a></li>
       </ul>
       <hr />
     </div>
