@@ -1,6 +1,6 @@
 'use strict'
 
-var photosApp = angular.module('photosApp', ['ngRoute', 'photosControllers', 'photosServices']);
+var photosApp = angular.module('photosApp', ['ngRoute', 'photosControllers', 'photosServices', 'ngRetina']);
 
 photosApp.config(['$httpProvider', '$routeProvider', '$locationProvider', function($httpProvider, $routeProvider, $locationProvider) {
   var authToken = $("meta[name=\"csrf-token\"]").attr("content");

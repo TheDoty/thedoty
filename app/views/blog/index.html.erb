@@ -4,7 +4,7 @@
   <ul>
     <% for post in @posts %>
     <li>      
-      <div class="post">
+      <div class="post" data-no-turbolink>
         <a href="/<%= post.friendly %>">
    	      <h2><%= post.title %></h2> 
         </a>
