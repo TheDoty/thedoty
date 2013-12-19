@@ -3,7 +3,7 @@ class SessionsController < ApplicationController
   skip_before_filter :check_user, :only => [ :create, :not_admin, :destroy ]
 
   def create
-    if Rails.env.production? and not available_providers.includes?(params[:provider])
+    if Rails.env.production? and not available_providers.include?(params[:provider])
       render text: "Aren't you a laugh riot?"
     else
       hash = request.env['omniauth.auth']
@@ -26,7 +26,7 @@ class SessionsController < ApplicationController
   end
 
   protected
-  def self.available_providers
+  def available_providers
     [ 'twitter' ]
   end
 end
