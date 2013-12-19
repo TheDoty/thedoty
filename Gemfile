@@ -47,3 +47,5 @@ gem 'angularjs-rails'
 gem "mini_magick"
 gem 'carrierwave'
 gem 'will_paginate'
+gem 'omniauth'
+gem 'omniauth-twitter'

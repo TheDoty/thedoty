@@ -1,4 +1,6 @@
 class BlogController < ApplicationController
+  skip_before_filter :check_user, :only => [ :index, :show, :feed ]
+
   def index
     @posts = Post.where("in_timeline = ?", true).paginate(:page => params[:page]).order(:created_at).reverse_order
   end

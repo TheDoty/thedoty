@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131217200342) do
+ActiveRecord::Schema.define(version: 20131219023739) do
 
   create_table "favorites", force: true do |t|
     t.string   "friendly"
@@ -43,6 +43,15 @@ ActiveRecord::Schema.define(version: 20131217200342) do
     t.datetime "updated_at"
     t.string   "friendly"
     t.boolean  "in_timeline", default: true
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "hash_provider"
+    t.string   "hash_uid"
+    t.text     "name",          default: "Stranger"
+    t.boolean  "is_admin",      default: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

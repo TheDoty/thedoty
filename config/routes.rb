@@ -9,6 +9,9 @@ Thedoty::Application.routes.draw do
   get '/feed.rss' => "blog#feed", defaults: { format: :xml }
   get '/feed' => "blog#feed", defaults: { format: :xml }
   get '/:id' => "blog#show"
+  post '/auth/:provider/callback' => 'sessions#create'
+  get '/sessions/not_admin' => 'sessions#not_admin'
+  get '/sessions/destroy' => 'sessions#destroy' # TODO: Not restful
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

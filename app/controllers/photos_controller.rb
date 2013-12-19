@@ -1,4 +1,10 @@
 class PhotosController < ApplicationController
+  skip_before_filter :check_user, :only => [ :index, :page, :show ]
+
+  def new
+    render text: 'TODO: This is just a placeholder'
+  end
+
   def show
     respond_to do |format|
       format.html { render 'index.html' } # Let angular handle it

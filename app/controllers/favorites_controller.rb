@@ -1,4 +1,6 @@
 class FavoritesController < ApplicationController
+  skip_before_filter :check_user, :only => [ :index, :show ]
+
   def index
     respond_to do |format|
       format.html { render 'index.html' }
