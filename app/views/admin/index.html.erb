@@ -1,0 +1,7 @@
+<%= content_for :title, "Howdy, #{session[:user].name}" %>
+
+<h2>Howdy, <%= session[:user].name %><h2>
+
+<%= button_to "LOGOUT", { controller: :sessions, action: :destroy }, method: :delete %>
+
+<%= button_to "UPLOAD PHOTO", { controller: :photos, action: :new}, method: :get %>

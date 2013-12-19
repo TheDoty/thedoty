@@ -5,3 +5,5 @@ The blog is straightforward MVC rails.  Authoring is via the rails console for n
 The photos section is now built on AngularJS.  Add via the bin/add_photo.sh script.
 
 The favorites section is AngularJS with the rails backend just server up JSON and loading the angular files.  Check out app/assets/javascript/favorites/*.js and public/partials for most of the non-obvious files.
+
+Admin authentication is done with twitter and omniauth via oauth.  You can access the (so far very rudimentary) admin page at /admin.

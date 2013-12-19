@@ -2,9 +2,20 @@ class PhotosController < ApplicationController
   skip_before_filter :check_user, :only => [ :index, :page, :show ]
 
   def new
-    render text: 'TODO: This is just a placeholder'
+    @photo = Photo.new
   end
 
+  def create
+    @photo = Photo.new(params[:photo].permit(:alt, :description, :photo))
+
+    if @photo.save
+      flash[:notice] = 'Photo Created'
+      redirect_to url_for(controller: :admin, action: :index)
+    else
+      render action: :new
+    end
+  end
+    
   def show
     respond_to do |format|
       format.html { render 'index.html' } # Let angular handle it
