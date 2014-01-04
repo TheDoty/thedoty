@@ -1,0 +1,20 @@
+<div class="content-list">
+  <ul>
+    <li ng-repeat="post in blogPage.posts">
+      <div class="post">
+        <a ng-href="/{{ post.friendly }}">
+   	      <h2>{{ post.title }}</h2> 
+        </a>
+	      <h3>{{ post.created_at }}</h3> 
+        <div class="body-wrapper" ng-bind-html="bodyOf(post)"></div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div class="pagination">
+  <a id="link-newer" class="previous_page" rel="prev start" href="/page/{{ newerPage }}" ng-if="newerPage">&lt; NEWER</a>
+  <a id="link-older" class="next_page" rel="next" href="/page/{{ olderPage }}" ng-if="olderPage">OLDER &gt;</a>
+</div>
+
+<div class="clearfix"></div>

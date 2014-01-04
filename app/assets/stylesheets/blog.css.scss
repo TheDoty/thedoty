@@ -32,3 +32,8 @@ $bottom-image-spacing: $image-spacing/2 - 7;
   max-width: 960px;
   max-height: 960px;
 }
+
+.content-list li div .body-wrapper {
+  margin: 0px;
+  padding: 0px;
+}

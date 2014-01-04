@@ -1,11 +1,15 @@
 Thedoty::Application.routes.draw do
   # Home page is the blog
   get '/' => "blog#index"
+  # Hack to use will_paginate with an AngularJS view
+  get '/page/:page.json' => "blog#page", defaults: { format: :json }
+  get '/page/:page' => "blog#index"
 
   # Photos
   resources :photos, defaults: { format: :html }
   # Hack to use will_paginate with an AngularJS view
   get '/photos/page/:page.json' => "photos#page", defaults: { format: :json }
+  get '/photos/page/:page' => "photos#index"
 
   # Favorites
   resources :favorites, defaults: { format: :html }
@@ -32,5 +36,6 @@ Thedoty::Application.routes.draw do
   get '/:controller/partial/:partial.html', action: :partial
 
   # The default for friendly blog post IDs.
-  get '/:id' => "blog#show"
+  get '/:id.json' => "blog#show", defaults: { format: :json }
+  get '/:id' => "blog#show", defaults: { format: :html }
 end

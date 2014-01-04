@@ -1,15 +1,1 @@
 <% content_for :title, @post.title %>
-
-<div class="content-list">
-  <ul>
-    <li>      
-      <div data-no-turbolink>
-   	    <h2><%= @post.title %></h2> 
-        <% if @post.created_at %>
-	        <h3><%= @post.created_at.strftime("%B %d, %Y") %></h3> 
-        <% end %>
-        <%= @post.body.html_safe %>
-      </div>
-    </li>
-  </ul>
-</div>

@@ -24,6 +24,8 @@
 //= require favorites/controllers
 //= require photos/services
 //= require photos/controllers
+//= require blog/services
+//= require blog/controllers
 //= require_directory .
 
 'use strict'
@@ -31,12 +33,26 @@
 /* Tell angular to reload when back buttons are pressed, etc */
 $(document).on('page:load', function() {
   $('[ng-app]').each(function() {
-	  module = $(this).attr('ng-app');
+	  var module = $(this).attr('ng-app');
 	  angular.bootstrap(this, [module]);
   });
 });
 
-var publicApp = angular.module('publicApp', ['ngRoute', 'ngSanitize', 'ngRetina', 'google-maps', 'favoritesControllers', 'favoritesServices', 'photosControllers', 'photosServices']);
+/* Allow arrow keys to handle pages and switch photos */
+function keyHandler(e) {
+  e = e || window.event;
+
+  if (e.keyCode == '37') {
+    $('#link-newer').first().click();
+  }
+  else if (e.keyCode == '39') {
+    $('#link-older').first().click();    
+  }
+}
+
+document.onkeydown = keyHandler;
+
+var publicApp = angular.module('publicApp', ['ngRoute', 'ngSanitize', 'ngRetina', 'google-maps', 'favoritesControllers', 'favoritesServices', 'photosControllers', 'photosServices', 'blogServices', 'blogControllers']);
 
 publicApp.controller('AboutController', [ '$scope' , function($scope) {
   $scope.section = 'about';
@@ -73,7 +89,20 @@ publicApp.config(['$httpProvider', '$routeProvider', '$locationProvider', functi
       templateUrl: '/about/partial/about.html',
       controller: 'AboutController'
     }).
+    when('/', {
+      templateUrl: '/blog/partial/blog.html',
+      controller: 'BlogController'
+    }).
+    when('/page/:page', {
+      templateUrl: '/blog/partial/blog.html',
+      controller: 'BlogController'
+    }).    
+    when('/:id', {
+      templateUrl: '/blog/partial/post.html',
+      controller: 'PostController'
+    }).
     otherwise({
-      controller: 'TodoController'
+      templateUrl: '/blog/partial/post.html',
+      controller: 'PostController'
     });
 }]);

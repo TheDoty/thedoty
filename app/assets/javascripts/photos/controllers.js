@@ -7,6 +7,7 @@ photosControllers.controller('PhotosController', [ '$scope', '$routeParams', 'Ph
 
   var pageNum = parseInt($routeParams.page || 1);
   $scope.photoPage = PhotoPage.get({ page: pageNum });
+
   if(pageNum > 1) {
     $scope.newerPage = pageNum - 1;
   }
