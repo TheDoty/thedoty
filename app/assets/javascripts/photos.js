@@ -1,8 +1,3 @@
-/* require and init the photos AngularJS app */
-//= require photos/app
-//= require photos/services
-//= require photos/controllers
-
 function keyHandler(e) {
   e = e || window.event;
 

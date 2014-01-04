@@ -3,14 +3,8 @@ module ApplicationHelper
   def nav_li(controller, description)
     url = url_for :controller => controller, :action => :index
 
-    if params[:controller].to_s == controller.to_s
-      content_tag(:li, :class => 'active') do
-        link_to(description, url)
-      end
-    else
-      content_tag(:li) do
-        link_to(description, url)
-      end
+    content_tag(:li, 'ng-class' => "{active: section == '#{controller}'}".html_safe) do
+      link_to(description, url)
     end
   end
 end

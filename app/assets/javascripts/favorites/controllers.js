@@ -3,6 +3,7 @@
 var favoritesControllers = angular.module('favoritesControllers', [ 'google-maps' ]);
 
 favoritesControllers.controller('FavoritesController', [ '$scope', 'FavoritesList', function($scope, FavoritesList) {
+  $scope.section = 'favorites';
   $scope.favorites = FavoritesList.list();
   $scope.viewType = 'everything';
 
@@ -28,6 +29,8 @@ favoritesControllers.controller('FavoritesController', [ '$scope', 'FavoritesLis
 }]);
 
 favoritesControllers.controller('FavoriteController', [ '$scope', '$sce', '$routeParams', 'FavoriteDetail', function($scope, $sce, $routeParams, FavoriteDetail) {    
+  $scope.section = 'favorites';
+
   angular.extend($scope, {
 	  // Start at Denver and get a neat zoom in effect when we have the data
 	  center: { latitude: 39.737567, longitude: -104.984718 },

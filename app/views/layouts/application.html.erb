@@ -1,3 +1,4 @@
+<%# This is a wrapper to boot up AngularJS, see partial.html.erb for your general layout stuff. %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,43 +7,11 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= yield :head %>
   <%= csrf_meta_tags %>
+  <base href="/">
 </head>
 <body>
-  <div class="page">
-    <div class="title">
-      <a href="/">
-	<div>
-	  <h1><%= t('title') %></h1>
-	</div>
-      </a>
-    </div>
-    <div class="navigation">
-      <hr />
-      <ul data-no-turbolink>
-	<%= nav_li(:blog, 'BLOG') %>
-	<%= nav_li(:photos, 'PHOTOGRAPHS') %>
-	<%= nav_li(:favorites, 'FAVORITES') %>
-	<%= nav_li(:about, 'ABOUT') %>
-      </ul>
-      <hr />
-    </div>
-
-    <div class="content">
-    <%= yield %>
-    </div>
-
-    <div class="navigation">
-      <hr />
-      <ul>
-	      <li><a href="<%= t('email_href') %>">EMAIL</a></li>
-	      <li><a href="<%= t('linkedin_href') %>">LINKEDIN</a></li>
-	      <li><a href="<%= t('twitter_href') %>">TWITTER</a></li>
-        <li><a href="<%= t('500px_href') %>">500px</a></li>
-	      <li><a href="<%= t('cgoab_href') %>">CGOAB</a></li>
-	      <li><a href="<%= t('github_href') %>">SOURCE</a></li>
-      </ul>
-      <hr />
-    </div>
+  <div class="page" ng-app="publicApp">    
+    <div ng-view></div>
   </div>
 </body>
 </html>

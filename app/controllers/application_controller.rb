@@ -3,9 +3,18 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-  # CUD functions get the admin layout
+  # C_UD functions get the admin layout
   layout 'admin', :only => [ :new, :create, :edit, :update, :destroy ]
 
+  # Serve up all AngularJS partials through this action.  Your
+  # general layout stuff is in the partial layout instead of application.
+  layout 'partial', :only => [ :partial ]
+
+  def partial
+    render :action => params[:partial]
+  end
+
+  private
   # I rather prefer whitelists for security
   before_filter :check_user
 

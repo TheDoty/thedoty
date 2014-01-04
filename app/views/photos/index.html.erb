@@ -1,9 +1,2 @@
 <% content_for :title, "Photographs" %>
-<% content_for :head do %>
-  <%= javascript_include_tag "photos/photos.js" %>
-  <base href="/photos">
-<% end %>
 
-<div ng-app="photosApp">
-  <div ng-view></div>
-</div>
