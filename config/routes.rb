@@ -1,6 +1,7 @@
 Thedoty::Application.routes.draw do
   # Home page is the blog
   get '/' => "blog#index"
+  resources :posts, defaults: { format: :html }
   # Hack to use will_paginate with an AngularJS view
   get '/page/:page.json' => "blog#page", defaults: { format: :json }
   get '/page/:page' => "blog#index"

@@ -16,11 +16,16 @@ class Post < ActiveRecord::Base
     body = "<p>#{body}</p>".gsub /<p>\s*<\/p>/, ''
 
     post = Post.new(title: title, friendly: friendly, body: body)
-    post.save!
 
-    if created_at
-      post.created_at = created_at
-      post.save!
+    if post.save
+      if created_at
+        post.created_at = created_at
+        post.save!
+      end
+
+      return post
     end
+
+    return nil
   end
 end

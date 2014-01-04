@@ -6,12 +6,11 @@ class ApplicationController < ActionController::Base
   # C_UD functions get the admin layout
   layout 'admin', :only => [ :new, :create, :edit, :update, :destroy ]
 
-  # Serve up all AngularJS partials through this action.  Your
-  # general layout stuff is in the partial layout instead of application.
-  layout 'partial', :only => [ :partial ]
-
   def partial
-    render :action => params[:partial]
+    # Serve up all AngularJS partials through this action.  Your
+    # general layout stuff is in the partial layout instead of application.
+
+    render layout: 'partial', action: params[:partial]
   end
 
   private
