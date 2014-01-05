@@ -1,7 +1,7 @@
 class BlogController < ApplicationController
-  skip_before_filter :check_user, :only => [ :index, :show, :feed ]
+  skip_before_filter :check_user, :only => [ :index, :show, :feed, :page ]
 
-  def index
+  def index    
   end
 
   def page

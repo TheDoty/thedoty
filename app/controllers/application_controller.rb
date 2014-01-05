@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
 
   private
   # I rather prefer whitelists for security
-  before_filter :check_user
+  before_filter :check_user, except: [ :partial ]
 
   def check_user
     user = session[:user]
