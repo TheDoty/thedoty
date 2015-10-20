@@ -16,5 +16,8 @@
 /tmp
 /public/uploads
 /public/photo
+/public/assets
+/photos
+nohup.out
 
 *~
